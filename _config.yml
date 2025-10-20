@@ -1,3 +1,19 @@
-title: 'Emmitt Paige - Technical Writer'
-description: 'Cybersecurity & API Documentation Specialist | Top Secret Clearance'
+title: "Emmitt Paige - Technical Writer"
+description: "Cybersecurity & API Documentation Specialist | Top Secret Clearance"
+baseurl: ""
+url: "https://epaige8594.github.io"
 theme: jekyll-theme-minimal
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
