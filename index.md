@@ -4,22 +4,36 @@ title: "Emmitt Paige - Technical Writer"
 ---
 
 # Emmitt Paige
-**Technical Writer & Knowledge Management Specialist**
+**Cybersecurity & API Documentation Specialist | Top Secret Cleared**
 
-## About Me
-Technical Writer with 10 years of experience specializing in cybersecurity documentation and policy development. Expert in translating complex technical concepts into clear, actionable content.
+I transform complex technical concepts into clear, actionable documentation that enhances security posture and operational efficiency.
 
-**[View My Full Professional Background →](/about/)**
+**[View My Professional Background →](/about/)**
 
-## Services
-- API Documentation
-- Cybersecurity Runbooks & SOPs
-- User Guides & Technical Manuals
-- Knowledge Base Development
+## My Expertise
 
-## Contact
-- Email: e.t.paige@gmail.com
-- LinkedIn: [linkedin.com/in/emmitt-paige](https://www.linkedin.com/in/emmitt-paige)
-- Clearance: Top Secret SCI
+### 🛡️ Cybersecurity Documentation
+- Incident Response Runbooks & Playbooks
+- Security Policy & Procedure Development  
+- NIST Framework Compliance Documentation
+- System Security Plans (SSP)
 
-*This portfolio site is currently under development. Please check back soon for writing samples and project details.*
+### 🔗 API & Technical Documentation
+- REST API Documentation & Integration Guides
+- Software User Manuals & Admin Guides
+- Knowledge Base Articles & SOPs
+- Technical Architecture Diagrams
+
+### 🚀 Documentation Systems
+- Confluence & SharePoint Knowledge Bases
+- Git-based Documentation Workflows
+- Agile Documentation Processes
+- Cross-functional Team Collaboration
+
+## Let's Connect
+
+- **Email:** [e.t.paige@gmail.com](mailto:e.t.paige@gmail.com)
+- **LinkedIn:** [linkedin.com/in/emmitt-paige](https://www.linkedin.com/in/emmitt-paige)
+- **Clearance:** Top Secret SCI with CI Polygraph
+
+*This portfolio is continuously updated with new projects and writing samples.*
