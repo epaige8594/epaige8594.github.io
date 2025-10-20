@@ -23,3 +23,15 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+
+# Navigation
+show_downloads: false
+navigation:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+  - title: LinkedIn
+    url: https://www.linkedin.com/in/emmitt-paige
+  - title: Contact
+    url: mailto:e.t.paige@gmail.com

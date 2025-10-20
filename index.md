@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: "Emmitt Paige - Technical Writer"
 ---
 
 # Emmitt Paige
@@ -8,6 +8,8 @@ title: Home
 
 ## About Me
 Technical Writer with 10 years of experience specializing in cybersecurity documentation and policy development. Expert in translating complex technical concepts into clear, actionable content.
+
+**[View My Full Professional Background →](/about/)**
 
 ## Services
 - API Documentation
