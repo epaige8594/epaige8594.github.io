@@ -1,5 +1,5 @@
 title: "Emmitt Paige - Technical Writer"
-description: "Cybersecurity & API Documentation Specialist | Top Secret Cleared"
+description: "Cybersecurity & API Documentation Specialist"
 baseurl: ""
 url: "https://epaige8594.github.io"
 theme: jekyll-theme-cayman
@@ -21,6 +21,8 @@ navigation:
     url: /
   - title: About
     url: /about/
+  - title: Portfolio
+    url: /portfolio/
   - title: LinkedIn
     url: https://www.linkedin.com/in/emmitt-paige
   - title: Contact
