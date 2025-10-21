@@ -21,7 +21,7 @@ title: About
             <div class="card">
                 <h3>Core Competencies</h3>
                 <h4>Technical Writing & Documentation</h4>
-                <ul>
+                <ul style="color: #90a4ae;">
                     <li>User Guides, SOPs, & Runbooks</li>
                     <li>API Documentation & Integration Guides</li>
                     <li>System Architecture Documentation</li>
@@ -29,7 +29,7 @@ title: About
                 </ul>
                 
                 <h4>Cybersecurity Expertise</h4>
-                <ul>
+                <ul style="color: #90a4ae;">
                     <li>NIST Cybersecurity Framework</li>
                     <li>Incident Response Planning</li>
                     <li>Security Control Documentation</li>
@@ -39,7 +39,7 @@ title: About
             
             <div class="card">
                 <h3>Tools & Platforms</h3>
-                <ul>
+                <ul style="color: #90a4ae;">
                     <li><strong>Documentation:</strong> Confluence, SharePoint, Git, Markdown</li>
                     <li><strong>Diagramming:</strong> Lucidchart, Visio, Draw.io</li>
                     <li><strong>Cybersecurity:</strong> Splunk, Wireshark, Kali Linux</li>
@@ -47,7 +47,7 @@ title: About
                 </ul>
                 
                 <h3>Education & Certifications</h3>
-                <ul>
+                <ul style="color: #90a4ae;">
                     <li><strong>M.S. Cybersecurity Management & Policy</strong> - University of Maryland Global Campus (2024)</li>
                     <li><strong>B.A. Political Science, Summa Cum Laude</strong> - Howard University (2019)</li>
                     <li><strong>CompTIA Security+</strong></li>

@@ -2,11 +2,13 @@ title: "Emmitt Paige - Technical Writer"
 description: "Cybersecurity & API Documentation Specialist"
 baseurl: ""
 url: "https://epaige8594.github.io"
-theme: jekyll-theme-cayman
 
-# Custom CSS
-sass:
-  sass_dir: assets/css
+# Use tech layout as default
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "tech"
 
 # Build settings
 markdown: kramdown
@@ -14,38 +16,3 @@ highlighter: rouge
 permalink: pretty
 
 show_downloads: false
-
-# Navigation
-navigation:
-  - title: Home
-    url: /
-  - title: About
-    url: /about/
-  - title: Portfolio
-    url: /portfolio/
-  - title: LinkedIn
-    url: https://www.linkedin.com/in/emmitt-paige
-  - title: Contact
-    url: mailto:e.t.paige@gmail.com
-
-# Multiple layouts
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: "default"
-  - scope:
-      path: "index-tech.md"
-    values:
-      layout: "tech"
-
-# Multiple layouts
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: "default"
-  - scope:
-      path: "index-tech.md"
-    values:
-      layout: "tech"

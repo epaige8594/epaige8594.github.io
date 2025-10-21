@@ -10,7 +10,7 @@ title: "Emmitt Paige - Technical Writer"
         <p class="subtitle">Transforming complex concepts into clear, actionable documentation</p>
         <div class="hero-buttons">
             <a href="/about/" class="btn-gradient">View My Work</a>
-            <a href="#expertise" class="btn-gradient" style="background: transparent; border: 2px solid var(--primary);">My Expertise</a>
+            <a href="#expertise" class="btn-gradient" style="background: transparent; border: 2px solid #00e5ff;">My Expertise</a>
         </div>
     </div>
 </section>
@@ -23,7 +23,7 @@ title: "Emmitt Paige - Technical Writer"
             <div class="card">
                 <h3>🛡️ Cybersecurity Documentation</h3>
                 <p>Incident response runbooks, security policies, compliance documentation, and system security plans that enhance organizational security posture.</p>
-                <ul style="margin-top: 1rem; color: var(--text-gray);">
+                <ul style="margin-top: 1rem; color: #90a4ae;">
                     <li>Incident Response Playbooks</li>
                     <li>NIST Framework Documentation</li>
                     <li>Security Policy Development</li>
@@ -34,7 +34,7 @@ title: "Emmitt Paige - Technical Writer"
             <div class="card">
                 <h3>🔗 API & Technical Documentation</h3>
                 <p>Comprehensive API documentation, integration guides, and technical manuals that empower developers and users alike.</p>
-                <ul style="margin-top: 1rem; color: var(--text-gray);">
+                <ul style="margin-top: 1rem; color: #90a4ae;">
                     <li>REST API Documentation</li>
                     <li>Software User Manuals</li>
                     <li>Integration Guides</li>
@@ -45,7 +45,7 @@ title: "Emmitt Paige - Technical Writer"
             <div class="card">
                 <h3>🚀 Documentation Systems</h3>
                 <p>Modern documentation workflows and knowledge management systems that scale with your organization's needs.</p>
-                <ul style="margin-top: 1rem; color: var(--text-gray);">
+                <ul style="margin-top: 1rem; color: #90a4ae;">
                     <li>Git-based Documentation</li>
                     <li>Knowledge Base Development</li>
                     <li>Agile Documentation Processes</li>
@@ -56,10 +56,10 @@ title: "Emmitt Paige - Technical Writer"
     </div>
 </section>
 
-<section class="section" style="background: var(--card-bg);">
+<section class="section" style="background: rgba(255, 255, 255, 0.08);">
     <div class="container" style="text-align: center;">
         <h2 style="margin-bottom: 1rem; font-size: 2.5rem;" class="text-gradient">Ready to Enhance Your Documentation?</h2>
-        <p style="font-size: 1.2rem; margin-bottom: 2rem; color: var(--text-gray);">Let's discuss how I can help transform your technical documentation.</p>
+        <p style="font-size: 1.2rem; margin-bottom: 2rem; color: #90a4ae;">Let's discuss how I can help transform your technical documentation.</p>
         <a href="mailto:e.t.paige@gmail.com" class="btn-gradient glow">Get In Touch</a>
     </div>
 </section>

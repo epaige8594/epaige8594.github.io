@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/tech-style.css' | relative_url }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hero-bg"></div>
+    
+    <!-- Modern Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">Emmitt Paige</div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/about/">About</a>
+            <a href="/portfolio/">Portfolio</a>
+            <a href="https://www.linkedin.com/in/emmitt-paige" target="_blank">LinkedIn</a>
+            <a href="mailto:e.t.paige@gmail.com" class="btn-gradient">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        {{ content }}
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Emmitt Paige. Built with GitHub Pages.</p>
+            <div class="footer-links">
+                <a href="https://github.com/epaige8594">GitHub</a>
+                <a href="https://www.linkedin.com/in/emmitt-paige">LinkedIn</a>
+                <a href="mailto:e.t.paige@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
