@@ -27,3 +27,14 @@ navigation:
     url: https://www.linkedin.com/in/emmitt-paige
   - title: Contact
     url: mailto:e.t.paige@gmail.com
+
+# Multiple layouts
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: "index-tech.md"
+    values:
+      layout: "tech"
