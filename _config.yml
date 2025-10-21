@@ -38,3 +38,14 @@ defaults:
       path: "index-tech.md"
     values:
       layout: "tech"
+
+# Multiple layouts
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: "index-tech.md"
+    values:
+      layout: "tech"
