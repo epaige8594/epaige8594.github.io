@@ -9,7 +9,7 @@ title: "Emmitt Paige - Technical Writer"
         <p class="subtitle">Technical Writer & Documentation Specialist</p>
         <p class="subtitle">Transforming complex concepts into clear, actionable documentation</p>
         <div class="hero-buttons">
-            <a href="/about/" class="btn-gradient">View My Work</a>
+            <a href="/portfolio/" class="btn-gradient">View My Portfolio</a>
             <a href="#expertise" class="btn-gradient" style="background: transparent; border: 2px solid #00e5ff;">My Expertise</a>
         </div>
     </div>

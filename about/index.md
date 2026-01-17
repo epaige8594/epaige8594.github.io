@@ -7,6 +7,9 @@ title: About
     <div class="hero-content">
         <h1>About Me</h1>
         <p class="subtitle">Technical Writer & Knowledge Management Specialist</p>
+        <div class="hero-buttons">
+            <a href="/portfolio/" class="btn-gradient">View My Portfolio</a>
+        </div>
     </div>
 </section>
 
