@@ -87,3 +87,7 @@ title: Cybersecurity Documentation
 <div style="text-align: center; margin: 3rem 0;">
     <a href="/portfolio/cybersecurity-runbook/" class="btn-gradient glow">View Complete Incident Response Runbook</a>
 </div>
+
+<div style="text-align: center; margin: 3rem 0;">
+    <a href="/portfolio/cybersecurity-runbook/" class="btn-gradient glow">View Complete Incident Response Runbook</a>
+</div>
