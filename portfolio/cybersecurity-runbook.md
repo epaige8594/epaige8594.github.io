@@ -1,0 +1,162 @@
+---
+layout: tech
+title: Security Incident Runbook
+---
+
+<section class="hero" style="min-height: 40vh;">
+    <div class="hero-content">
+        <h1>Security Incident Runbook</h1>
+        <p class="subtitle">Automated Threat Containment & Readiness Documentation</p>
+        <p class="subtitle">Enterprise-level credential exfiltration response playbook</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="card">
+            <h2>Enterprise Security Operations Runbook</h2>
+            <p><strong>Version:</strong> 2026.1</p>
+            <p><strong>Mission:</strong> Rapid Detection, Containment, and Reporting of Credential-Based Exfiltration.</p>
+            
+            <div style="background: rgba(0, 229, 255, 0.1); border-radius: 8px; padding: 1.5rem; margin: 2rem 0; border-left: 4px solid #00e5ff;">
+                <h3>Documentation Purpose:</h3>
+                <p>This runbook demonstrates my ability to document complex, multi-phase security operations workflows that integrate multiple enterprise security tools into a cohesive response strategy.</p>
+            </div>
+            
+            <h3>Phase 1: Detection & Triage (Splunk ES)</h3>
+            <p>The Enterprise Security Dashboard uses Splunk ES to aggregate logs from across organizational divisions.</p>
+            
+            <h4>Trigger:</h4>
+            <ul style="color: #90a4ae;">
+                <li>A "Notable Event" is generated in Splunk</li>
+            </ul>
+            
+            <h4>Logic:</h4>
+            <ul style="color: #90a4ae;">
+                <li>Multiple failed logins followed by a successful login from a non-reputable IP (Geo-fenced alert)</li>
+                <li>Targeting a critical system or API gateway</li>
+            </ul>
+            
+            <h4>Analyst Action:</h4>
+            <ul style="color: #90a4ae;">
+                <li>Open the Incident Review dashboard in Splunk ES</li>
+                <li>Validate the risk score (Risk-Based Alerting)</li>
+                <li>Use Splunk Search Processing Language (SPL) to pivot and identify if the compromised account has accessed any sensitive data stores</li>
+            </ul>
+            
+            <hr style="border: 1px solid rgba(255,255,255,0.1); margin: 2rem 0;">
+            
+            <h3>Phase 2: Investigation & Context (Cortex XSOAR)</h3>
+            <p>Once the alert is validated, the workflow transitions to Cortex XSOAR (SOAR) for automated enrichment.</p>
+            
+            <h4>Automation Action:</h4>
+            <ul style="color: #90a4ae;">
+                <li>The Splunk alert triggers a XSOAR Playbook</li>
+            </ul>
+            
+            <h4>Enrichment:</h4>
+            <ul style="color: #90a4ae;">
+                <li>XSOAR automatically queries threat intelligence feeds for the suspicious IP</li>
+                <li>Queries identity management systems to pull the user's role and access level</li>
+            </ul>
+            
+            <h4>Analyst Action:</h4>
+            <ul style="color: #90a4ae;">
+                <li>Review the "Work Plan" in XSOAR</li>
+                <li>If the IP is confirmed malicious, the analyst clicks "Confirm/Quarantine"</li>
+            </ul>
+            
+            <hr style="border: 1px solid rgba(255,255,255,0.1); margin: 2rem 0;">
+            
+            <h3>Phase 3: Containment & Remediation (XSOAR & XDR)</h3>
+            <p>The automated response occurs here, leveraging the Zero Trust architecture of the enterprise environment.</p>
+            
+            <h4>Containment Steps:</h4>
+            <ul style="color: #90a4ae;">
+                <li><strong>Block IP:</strong> XSOAR pushes a command to the Next-Generation Firewall to block the malicious IP globally</li>
+                <li><strong>Disable Account:</strong> Automatically disables the compromised account</li>
+                <li><strong>Isolate Endpoint:</strong> Uses Endpoint Detection and Response (EDR/XDR) to isolate the host machine from the network to prevent lateral movement</li>
+            </ul>
+            
+            <hr style="border: 1px solid rgba(255,255,255,0.1); margin: 2rem 0;">
+            
+            <h3>Phase 4: Compliance Validation (Configuration Management)</h3>
+            <p>Following an incident, the environment must verify that systems involved still meet security baselines.</p>
+            
+            <h4>Remediation Action:</h4>
+            <ul style="color: #90a4ae;">
+                <li>Configuration management tool is triggered to scan the affected environment</li>
+            </ul>
+            
+            <h4>Baseline Check:</h4>
+            <ul style="color: #90a4ae;">
+                <li>Verifies the system against Security Technical Implementation Guides (STIGs)</li>
+                <li>Ensures no security controls were deactivated during the breach</li>
+            </ul>
+            
+            <h4>Automated Hardening:</h4>
+            <ul style="color: #90a4ae;">
+                <li>If configuration drift is detected, the tool automatically reapplies the secure configuration</li>
+            </ul>
+            
+            <h4>Result:</h4>
+            <ul style="color: #90a4ae;">
+                <li>Clean/compliant status is pushed back to the SIEM for the analytic report</li>
+            </ul>
+            
+            <hr style="border: 1px solid rgba(255,255,255,0.1); margin: 2rem 0;">
+            
+            <h3>Phase 5: Reporting & Analytic Feedback (Security Dashboard)</h3>
+            <p>This phase documents the event for executive and regulatory oversight.</p>
+            
+            <h4>Reporting Action:</h4>
+            <ul style="color: #90a4ae;">
+                <li><strong>Generate Report:</strong> SIEM aggregates the timeline from Detection → Enrichment → Remediation</li>
+                <li><strong>Compliance Requirement:</strong> The report is automatically formatted for executive leadership and regulatory bodies</li>
+                <li><strong>Analytic Support:</strong> Data is fed into trend analysis to adjust future detection logic across the enterprise</li>
+            </ul>
+            
+            <div style="background: rgba(0, 212, 170, 0.1); border-radius: 8px; padding: 1.5rem; margin: 2rem 0; border-left: 4px solid #00d4aa;">
+                <h3>Documentation Value Delivered:</h3>
+                <ul style="color: #90a4ae;">
+                    <li><strong>Clarity:</strong> Complex multi-tool workflow made understandable</li>
+                    <li><strong>Actionable:</strong> Step-by-step instructions for security analysts</li>
+                    <li><strong>Compliant:</strong> Meets regulatory reporting requirements</li>
+                    <li><strong>Scalable:</strong> Can be adapted across enterprise divisions</li>
+                    <li><strong>Auditable:</strong> Clear documentation trail for investigations</li>
+                </ul>
+            </div>
+            
+            <div style="background: rgba(0, 184, 212, 0.1); border-radius: 8px; padding: 1.5rem; margin: 2rem 0; border-left: 4px solid #00b8d4;">
+                <h3>Tools & Technologies Documented:</h3>
+                <ul style="color: #90a4ae;">
+                    <li><strong>SIEM:</strong> Splunk Enterprise Security</li>
+                    <li><strong>SOAR:</strong> Cortex XSOAR</li>
+                    <li><strong>Firewall:</strong> Palo Alto Networks NGFW</li>
+                    <li><strong>EDR/XDR:</strong> Microsoft Defender</li>
+                    <li><strong>Compliance:</strong> NIST/FISMA frameworks</li>
+                    <li><strong>Identity:</strong> Active Directory/Okta</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="card" style="margin-top: 2rem;">
+            <h2>Why This Documentation Matters</h2>
+            <p>This runbook demonstrates my ability to:</p>
+            <ul style="color: #90a4ae;">
+                <li><strong>Translate technical complexity</strong> into clear, actionable procedures</li>
+                <li><strong>Integrate multiple security tools</strong> into a cohesive workflow</li>
+                <li><strong>Address compliance requirements</strong> while maintaining operational efficiency</li>
+                <li><strong>Create documentation that scales</strong> across large enterprises</li>
+                <li><strong>Bridge the gap</strong between technical teams and executive leadership</li>
+            </ul>
+            
+            <p style="margin-top: 1.5rem;">This is exactly the type of documentation that organizations need to respond effectively to security incidents while maintaining regulatory compliance and operational continuity.</p>
+        </div>
+    </div>
+</section>
+
+<div style="text-align: center; margin-top: 3rem;">
+    <a href="/portfolio/" class="btn-gradient">← Back to Portfolio</a>
+    <a href="/portfolio/cybersecurity/" class="btn-gradient" style="background: transparent; border: 2px solid #00e5ff; margin-left: 1rem;">View Cybersecurity Portfolio</a>
+</div>

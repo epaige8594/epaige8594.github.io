@@ -27,7 +27,6 @@ title: Portfolio
                 <p>Incident response playbooks, security policies, and compliance documentation.</p>
                 <div style="margin-top: 1.5rem;">
                     <a href="/portfolio/cybersecurity/" class="btn-gradient">View Samples</a>
-                    <a href="/portfolio/cybersecurity-runbook/" class="btn-gradient" style="background: transparent; border: 2px solid #00e5ff; margin-left: 0.5rem;">Runbook Example</a>
                 </div>
             </div>
             
@@ -37,18 +36,6 @@ title: Portfolio
                 <div style="margin-top: 1.5rem;">
                     <a href="/portfolio/knowledge-bases/" class="btn-gradient">View Samples</a>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container">
-        <div class="card" style="text-align: center;">
-            <h2 class="text-gradient">Featured: Enterprise Security Runbook</h2>
-            <p>A complete incident response playbook demonstrating multi-phase security operations documentation.</p>
-            <div style="margin-top: 1.5rem;">
-                <a href="/portfolio/cybersecurity-runbook/" class="btn-gradient glow">View Detailed Runbook</a>
             </div>
         </div>
     </div>
