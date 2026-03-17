@@ -1,0 +1,585 @@
+---
+layout: tech
+title: Policy & Governance Documentation
+---
+
+<section class="hero" style="min-height: 30vh;">
+    <div class="hero-content">
+        <h1>Policy & Governance</h1>
+        <p class="subtitle">ISSM & Cyber Policy Lead Documentation</p>
+        <p class="subtitle">Graduate work in cybersecurity policy, continuity planning, and risk management</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <!-- Interactive Reader Interface -->
+        <div class="card" style="padding: 2rem;">
+            <div style="display: grid; grid-template-columns: 300px 1fr; gap: 2rem; min-height: 600px;">
+                
+                <!-- Left Column: Document List -->
+                <div style="border-right: 1px solid rgba(0, 229, 255, 0.3); padding-right: 1.5rem;">
+                    <h3 class="text-gradient" style="margin-bottom: 1.5rem;">Document Library</h3>
+                    
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="color: #00e5ff; margin-bottom: 0.5rem;">📋 Policy Documents</h4>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 0.75rem;">
+                                <a href="#" onclick="loadDocument('business-continuity'); return false;" style="color: #90a4ae; text-decoration: none; display: block; padding: 0.5rem; border-radius: 5px; transition: all 0.3s;" onmouseover="this.style.backgroundColor='rgba(0,229,255,0.1)'; this.style.color='#00e5ff';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#90a4ae';">📄 Business Continuity Plan</a>
+                            </li>
+                            <li style="margin-bottom: 0.75rem;">
+                                <a href="#" onclick="loadDocument('disaster-recovery'); return false;" style="color: #90a4ae; text-decoration: none; display: block; padding: 0.5rem; border-radius: 5px; transition: all 0.3s;" onmouseover="this.style.backgroundColor='rgba(0,229,255,0.1)'; this.style.color='#00e5ff';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#90a4ae';">📄 Disaster Recovery Plan</a>
+                            </li>
+                            <li style="margin-bottom: 0.75rem;">
+                                <a href="#" onclick="loadDocument('cyber-policy'); return false;" style="color: #90a4ae; text-decoration: none; display: block; padding: 0.5rem; border-radius: 5px; transition: all 0.3s;" onmouseover="this.style.backgroundColor='rgba(0,229,255,0.1)'; this.style.color='#00e5ff';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#90a4ae';">📄 Cyber Policy Framework</a>
+                            </li>
+                            <li style="margin-bottom: 0.75rem;">
+                                <a href="#" onclick="loadDocument('risk-assessment'); return false;" style="color: #90a4ae; text-decoration: none; display: block; padding: 0.5rem; border-radius: 5px; transition: all 0.3s;" onmouseover="this.style.backgroundColor='rgba(0,229,255,0.1)'; this.style.color='#00e5ff';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#90a4ae';">📄 Risk Assessment Methodology</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 style="color: #00e5ff; margin-bottom: 0.5rem;">🎓 Graduate Papers</h4>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 0.75rem;">
+                                <a href="#" onclick="loadDocument('incident-response-plan'); return false;" style="color: #90a4ae; text-decoration: none; display: block; padding: 0.5rem; border-radius: 5px; transition: all 0.3s;" onmouseover="this.style.backgroundColor='rgba(0,229,255,0.1)'; this.style.color='#00e5ff';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#90a4ae';">📄 Incident Response Plan</a>
+                            </li>
+                            <li style="margin-bottom: 0.75rem;">
+                                <a href="#" onclick="loadDocument('tabletop-exercise'); return false;" style="color: #90a4ae; text-decoration: none; display: block; padding: 0.5rem; border-radius: 5px; transition: all 0.3s;" onmouseover="this.style.backgroundColor='rgba(0,229,255,0.1)'; this.style.color='#00e5ff';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#90a4ae';">📄 Tabletop Exercise Design</a>
+                            </li>
+                            <li style="margin-bottom: 0.75rem;">
+                                <a href="#" onclick="loadDocument('nist-implementation'); return false;" style="color: #90a4ae; text-decoration: none; display: block; padding: 0.5rem; border-radius: 5px; transition: all 0.3s;" onmouseover="this.style.backgroundColor='rgba(0,229,255,0.1)'; this.style.color='#00e5ff';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#90a4ae';">📄 NIST Framework Implementation</a>
+                            </li>
+                            <li style="margin-bottom: 0.75rem;">
+                                <a href="#" onclick="loadDocument('cyber-policy-analysis'); return false;" style="color: #90a4ae; text-decoration: none; display: block; padding: 0.5rem; border-radius: 5px; transition: all 0.3s;" onmouseover="this.style.backgroundColor='rgba(0,229,255,0.1)'; this.style.color='#00e5ff';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#90a4ae';">📄 Cyber Policy Analysis</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Right Column: Document Reader -->
+                <div id="document-viewer" style="background: rgba(0,0,0,0.2); border-radius: 10px; padding: 2rem; overflow-y: auto; max-height: 800px;">
+                    <div style="text-align: center; color: #90a4ae; padding: 4rem 0;">
+                        <h2 class="text-gradient">Select a Document</h2>
+                        <p>Choose a policy or graduate paper from the library to begin reading.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript for Document Loading -->
+<script>
+    // Document content storage
+    const documents = {
+        'business-continuity': {
+            title: 'Business Continuity Plan',
+            content: `# Business Continuity Plan
+    
+## Version: 2.0
+## Last Updated: December 2024
+
+### 1.0 Introduction
+This Business Continuity Plan (BCP) establishes procedures for recovering critical business functions in the event of a disruption. The plan ensures that essential operations can continue during and after a crisis situation.
+
+### 2.0 Scope
+This plan applies to all departments and critical functions within the organization, including IT infrastructure, customer service, financial operations, and supply chain management.
+
+### 3.0 Business Impact Analysis
+#### 3.1 Critical Functions
+- Customer transaction processing (RTO: 4 hours)
+- IT infrastructure and network operations (RTO: 2 hours)
+- Security monitoring and incident response (RTO: 1 hour)
+- Financial reconciliation (RTO: 24 hours)
+
+#### 3.2 Recovery Time Objectives
+| Function | RTO | RPO | Priority |
+|----------|-----|-----|----------|
+| Security Operations | 1 hour | 15 min | Critical |
+| Customer Transactions | 4 hours | 1 hour | High |
+| Internal Communications | 8 hours | 4 hours | Medium |
+| Administrative Functions | 24 hours | 24 hours | Low |
+
+### 4.0 Incident Response Procedures
+#### 4.1 Detection
+- Monitor system alerts and security notifications
+- Establish communication channels with response team
+- Document initial incident details
+
+#### 4.2 Assessment
+- Determine scope and impact
+- Classify incident severity (Critical/High/Medium/Low)
+- Activate appropriate response team
+
+#### 4.3 Activation
+- Notify BCP team leadership
+- Establish command center (physical or virtual)
+- Begin recovery procedures
+
+### 5.0 Recovery Strategies
+#### 5.1 Technology Recovery
+- Failover to secondary data center
+- Restore critical systems from backup
+- Verify system integrity before restoration
+
+#### 5.2 Workspace Recovery
+- Activate remote work capabilities
+- Establish alternate work locations
+- Ensure secure connectivity
+
+#### 5.3 Supply Chain Recovery
+- Contact alternate suppliers
+- Prioritize critical inventory
+- Establish logistics rerouting
+
+### 6.0 Plan Maintenance
+This plan is reviewed quarterly and updated annually, or after any significant incident or organizational change.
+
+### 7.0 Appendices
+A. Emergency Contact List
+B. Vendor Contact Information
+C. System Recovery Procedures
+D. Backup Configuration Details`
+        },
+        
+        'disaster-recovery': {
+            title: 'Disaster Recovery Plan',
+            content: `# Disaster Recovery Plan
+    
+## Version: 1.5
+## Last Updated: November 2024
+
+### 1.0 Purpose
+This Disaster Recovery Plan (DRP) provides standardized procedures for recovering IT infrastructure and systems following a disaster. The plan ensures minimal downtime and data loss while maintaining security and compliance.
+
+### 2.0 Scope
+Covers all critical IT systems, including servers, network infrastructure, security tools, and data repositories.
+
+### 3.0 Recovery Priorities
+#### Tier 1: Critical Systems (RTO: < 4 hours)
+- Firewall and security appliances
+- Authentication servers (Active Directory/Okta)
+- Core network infrastructure
+- Critical application servers
+
+#### Tier 2: Important Systems (RTO: < 24 hours)
+- Email and collaboration tools
+- File servers and document management
+- Monitoring and logging systems
+- Development environments
+
+#### Tier 3: Non-Critical Systems (RTO: < 72 hours)
+- Archive and backup systems
+- Test environments
+- Administrative tools
+- Reporting systems
+
+### 4.0 Disaster Scenarios
+#### 4.1 Natural Disasters
+- Flood/Fire/Earthquake procedures
+- Regional outage response
+- Data center evacuation
+
+#### 4.2 Technical Failures
+- Hardware failure response
+- Software corruption recovery
+- Network outage procedures
+
+#### 4.3 Security Incidents
+- Ransomware recovery
+- Data breach containment
+- System compromise restoration
+
+### 5.0 Recovery Procedures
+#### 5.1 System Recovery Steps
+1. Assess damage and declare disaster
+2. Activate recovery team
+3. Restore critical systems from backup
+4. Validate system integrity
+5. Resume operations
+
+#### 5.2 Data Restoration
+- Restore from verified backups
+- Validate data integrity
+- Test critical transactions
+- Monitor for anomalies
+
+### 6.0 Testing Schedule
+- Quarterly tabletop exercises
+- Semi-annual technical tests
+- Annual full-scale drills
+
+### 7.0 Appendices
+A. Backup Configuration
+B. Recovery Runbooks
+C. Vendor Support Contacts
+D. System Architecture Diagrams`
+        },
+        
+        'cyber-policy': {
+            title: 'Cyber Policy Framework',
+            content: `# Cyber Policy Framework
+    
+## Version: 3.0
+## Last Updated: October 2024
+
+### 1.0 Purpose
+This framework establishes the governance structure, policies, and standards for managing cybersecurity risk across the organization.
+
+### 2.0 Policy Hierarchy
+#### 2.1 Tier 1: Governance Policies
+- Information Security Policy
+- Risk Management Framework
+- Compliance and Audit Policy
+
+#### 2.2 Tier 2: Operational Policies
+- Access Control Policy
+- Incident Response Policy
+- Data Classification Policy
+- Acceptable Use Policy
+
+#### 2.3 Tier 3: Technical Standards
+- Encryption Standards
+- Network Security Standards
+- Application Security Standards
+- Cloud Security Standards
+
+### 3.0 Roles and Responsibilities
+#### 3.1 CISO
+- Overall security strategy
+- Policy approval
+- Risk acceptance
+
+#### 3.2 ISSM
+- Policy implementation
+- Compliance monitoring
+- Security awareness
+
+#### 3.3 System Owners
+- Control implementation
+- System compliance
+- Risk management
+
+### 4.0 Compliance Requirements
+- NIST SP 800-53
+- FISMA
+- GDPR/Privacy
+- Industry-specific regulations
+
+### 5.0 Policy Lifecycle
+- Drafting and review
+- Stakeholder approval
+- Publication and training
+- Monitoring and updates
+- Retirement and archive`
+        },
+        
+        'incident-response-plan': {
+            title: 'Incident Response Plan - Graduate Thesis',
+            content: `# Comprehensive Incident Response Plan
+    
+## A Graduate Thesis Project
+## University of Maryland Global Campus
+## MS Cybersecurity Management & Policy
+## December 2024
+
+### Executive Summary
+This thesis presents a comprehensive Incident Response Plan (IRP) developed for a mid-sized healthcare organization. The plan addresses the unique challenges of protecting Protected Health Information (PHI) while maintaining operational continuity.
+
+### 1.0 Introduction
+The healthcare sector faces increasing cybersecurity threats, with ransomware attacks and data breaches threatening patient safety and privacy. This IRP provides a structured approach to incident response that meets regulatory requirements while ensuring rapid recovery.
+
+### 2.0 Literature Review
+#### 2.1 Current Threat Landscape
+- Analysis of healthcare breach statistics
+- Common attack vectors in healthcare
+- Impact of incidents on patient care
+
+#### 2.2 Regulatory Framework
+- HIPAA Security Rule requirements
+- HITECH Act provisions
+- NIST guidance for healthcare
+
+#### 2.3 Industry Best Practices
+- HHS 405(d) Program
+- Health Sector Coordinating Council
+- MITRE ATT&CK framework
+
+### 3.0 Methodology
+#### 3.1 Risk Assessment
+- Asset identification and classification
+- Threat modeling
+- Vulnerability assessment
+- Impact analysis
+
+#### 3.2 Plan Development
+- Stakeholder interviews
+- Process mapping
+- Procedure documentation
+- Tool integration
+
+### 4.0 Incident Response Framework
+#### 4.1 Preparation Phase
+- Policy development
+- Team training
+- Tool deployment
+- Communication planning
+
+#### 4.2 Detection & Analysis
+- Monitoring procedures
+- Alert triage
+- Investigation methodology
+- Evidence collection
+
+#### 4.3 Containment, Eradication & Recovery
+- Short-term containment
+- System hardening
+- Data restoration
+- Long-term remediation
+
+#### 4.4 Post-Incident Activity
+- Lessons learned
+- Reporting
+- Process improvement
+- Training updates
+
+### 5.0 Testing and Validation
+- Tabletop exercise results
+- Technical testing methodology
+- Plan improvements from testing
+
+### 6.0 Conclusion
+This IRP demonstrates the integration of regulatory requirements, industry best practices, and organizational needs into a comprehensive incident response capability.
+
+### References
+- NIST SP 800-61 Rev. 2
+- HIPAA Security Rule (45 CFR Part 160 and Subparts A and C of Part 164)
+- HHS 405(d) Program
+- MITRE ATT&CK Framework
+
+### Appendices
+A. Incident Classification Matrix
+B. Escalation Procedures
+C. Communication Templates
+D. Evidence Collection Forms`
+        },
+        
+        'tabletop-exercise': {
+            title: 'Tabletop Exercise Design - Graduate Paper',
+            content: `# Tabletop Exercise Design for Healthcare Organizations
+    
+## Graduate Research Paper
+## University of Maryland Global Campus
+## MS Cybersecurity Management & Policy
+## October 2024
+
+### Abstract
+This paper presents a methodology for designing and executing effective tabletop exercises for healthcare organizations, focusing on ransomware scenarios affecting Electronic Health Records (EHR) systems and patient care operations.
+
+### 1.0 Introduction
+Tabletop exercises are critical for testing incident response capabilities without disrupting operations. This research develops a comprehensive exercise framework tailored to healthcare organizations' unique requirements.
+
+### 2.0 Exercise Design Principles
+#### 2.1 Learning Objectives
+- Test communication protocols
+- Validate decision-making processes
+- Identify procedural gaps
+- Build team confidence
+
+#### 2.2 Scenario Development
+- Realistic threat modeling
+- Progressive complexity
+- Multi-team coordination
+- Time pressure simulation
+
+### 3.0 Healthcare-Specific Considerations
+#### 3.1 Patient Safety Impact
+- Continuity of care procedures
+- Clinical team integration
+- Downtime procedures
+- Patient communication
+
+#### 3.2 Regulatory Requirements
+- HIPAA breach notification
+- CMS reporting
+- State requirements
+- Accreditation standards
+
+### 4.0 Sample Exercise: Ransomware Attack
+#### 4.1 Scenario Overview
+A ransomware attack encrypts the primary EHR system, affecting multiple departments and patient care operations.
+
+#### 4.2 Inject 1: Initial Detection
+- IT team discovers encryption notice
+- EHR system inaccessible
+- Backups also encrypted
+
+#### 4.3 Inject 2: Clinical Impact
+- Emergency department unable to access patient records
+- Pharmacy system offline
+- Lab results unavailable
+
+#### 4.4 Inject 3: Communication Crisis
+- Media inquiries begin
+- Patients demand information
+- Board of directors requests briefing
+
+#### 4.5 Inject 4: Regulatory Notification
+- HIPAA breach determination
+- HHS notification timeline
+- Patient notification requirements
+
+### 5.0 Evaluation Framework
+#### 5.1 Success Metrics
+- Time to decision points
+- Communication effectiveness
+- Resource allocation
+- Documentation quality
+
+#### 5.2 After-Action Review
+- Facilitated discussion
+- Strength identification
+- Gap analysis
+- Improvement planning
+
+### 6.0 Conclusion
+Tabletop exercises provide essential preparation for incident response. Healthcare organizations must tailor exercises to address both technical and clinical considerations.
+
+### References
+- HHS Office for Civil Rights
+- NIST SP 800-84
+- Healthcare and Public Health Sector-Specific Plan`
+        },
+        
+        'nist-implementation': {
+            title: 'NIST CSF Implementation Guide',
+            content: `# Implementing the NIST Cybersecurity Framework
+    
+## Graduate Research Paper
+## University of Maryland Global Campus
+## MS Cybersecurity Management & Policy
+## September 2024
+
+### Abstract
+This paper provides a practical guide for implementing the NIST Cybersecurity Framework (CSF) in small-to-medium healthcare organizations, addressing resource constraints while achieving meaningful security improvements.
+
+### 1.0 Introduction
+The NIST CSF provides a comprehensive framework for managing cybersecurity risk, but implementation can be challenging for organizations with limited resources. This research develops a phased approach suitable for healthcare organizations.
+
+### 2.0 Framework Overview
+#### 2.1 Core Functions
+- Identify
+- Protect
+- Detect
+- Respond
+- Recover
+
+#### 2.2 Implementation Tiers
+- Tier 1: Partial
+- Tier 2: Risk-Informed
+- Tier 3: Repeatable
+- Tier 4: Adaptive
+
+#### 2.3 Profiles
+- Current Profile
+- Target Profile
+- Gap Analysis
+
+### 3.0 Phased Implementation Approach
+#### 3.1 Phase 1: Foundation (Months 1-3)
+- Asset inventory
+- Risk assessment
+- Policy development
+- Basic controls
+
+#### 3.2 Phase 2: Protection (Months 4-6)
+- Access control
+- Data security
+- Awareness training
+- Maintenance
+
+#### 3.3 Phase 3: Detection (Months 7-9)
+- Monitoring
+- Anomaly detection
+- Continuous improvement
+- Testing
+
+#### 3.4 Phase 4: Response & Recovery (Months 10-12)
+- Response planning
+- Communications
+- Analysis
+- Improvements
+
+### 4.0 Healthcare Implementation Considerations
+#### 4.1 HIPAA Alignment
+- Mapping CSF to Security Rule
+- Privacy requirements
+- Breach notification
+
+#### 4.2 Clinical Environment
+- Medical device security
+- Patient safety
+- Operational continuity
+
+### 5.0 Case Study: Implementation at Regional Healthcare Provider
+- Baseline assessment
+- Implementation challenges
+- Success metrics
+- Lessons learned
+
+### 6.0 Conclusion
+The NIST CSF provides a flexible framework adaptable to healthcare organizations of any size. A phased approach enables organizations to achieve meaningful improvements while managing resource constraints.
+
+### References
+- NIST Cybersecurity Framework
+- NIST SP 800-53
+- HIPAA Security Rule
+- FDA Guidance on Medical Device Security`
+        }
+    };
+
+    function loadDocument(docId) {
+        const doc = documents[docId];
+        const viewer = document.getElementById('document-viewer');
+        
+        if (doc) {
+            // Convert markdown-style content to HTML (basic conversion)
+            let htmlContent = doc.content
+                .replace(/^# (.*$)/gm, '<h1>$1</h1>')
+                .replace(/^## (.*$)/gm, '<h2>$1</h2>')
+                .replace(/^### (.*$)/gm, '<h3>$1</h3>')
+                .replace(/^#### (.*$)/gm, '<h4>$1</h4>')
+                .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                .replace(/### (.*$)/g, '<h3>$1</h3>')
+                .replace(/\n/g, '<br>')
+                .replace(/- (.*$)/gm, '<li>$1</li>');
+            
+            // Wrap lists
+            htmlContent = htmlContent.replace(/<li>.*?<\/li>/g, function(match) {
+                return match;
+            });
+            
+            viewer.innerHTML = `
+                <div style="background: rgba(255,255,255,0.05); border-radius: 10px; padding: 2rem;">
+                    <h1 class="text-gradient" style="margin-bottom: 1rem;">${doc.title}</h1>
+                    <div style="color: #e3f2fd; line-height: 1.8;">
+                        ${htmlContent}
+                    </div>
+                </div>
+            `;
+        }
+        
+        // Update URL hash without reloading
+        window.location.hash = docId;
+    }
+
+    // Check if there's a hash in the URL on page load
+    window.onload = function() {
+        if (window.location.hash) {
+            const docId = window.location.hash.substring(1);
+            loadDocument(docId);
+        }
+    };
+</script>
