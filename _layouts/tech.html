@@ -6,6 +6,58 @@
     <title>{{ page.title | default: site.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/tech-style.css' | relative_url }}">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Dropdown Menu Styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background: rgba(10, 25, 41, 0.95);
+            backdrop-filter: blur(20px);
+            min-width: 200px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            border-radius: 8px;
+            border: 1px solid rgba(0, 229, 255, 0.3);
+            z-index: 1001;
+            top: 100%;
+            left: 0;
+            margin-top: 0.5rem;
+        }
+        
+        .dropdown-content a {
+            color: var(--text-light);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 0.9rem;
+            border-bottom: 1px solid rgba(0, 229, 255, 0.1);
+        }
+        
+        .dropdown-content a:last-child {
+            border-bottom: none;
+        }
+        
+        .dropdown-content a:hover {
+            background: rgba(0, 229, 255, 0.1);
+            color: var(--primary);
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown:hover .dropbtn {
+            color: var(--primary);
+        }
+        
+        .dropbtn {
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <div class="hero-bg"></div>
@@ -16,8 +68,16 @@
         <div class="nav-links">
             <a href="/">Home</a>
             <a href="/about/">About</a>
-            <a href="/portfolio/">Portfolio</a>
-            <a href="/policy/">Policy & Governance</a>
+            <div class="dropdown">
+                <span class="dropbtn">Portfolio ▼</span>
+                <div class="dropdown-content">
+                    <a href="/portfolio/">All Work</a>
+                    <a href="/portfolio/#policy">Policy & Governance</a>
+                    <a href="/portfolio/#cybersecurity">Cybersecurity</a>
+                    <a href="/portfolio/#api">API Documentation</a>
+                    <a href="/portfolio/#knowledge-base">Knowledge Base</a>
+                </div>
+            </div>
             <a href="https://www.linkedin.com/in/emmitt-paige" target="_blank">LinkedIn</a>
             <a href="mailto:e.t.paige@gmail.com" class="btn-gradient">Contact</a>
         </div>
@@ -31,7 +91,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Emmitt Paige. Built with GitHub Pages.</p>
+            <p>&copy; 2025 Emmitt Paige. Built with GitHub Pages.</p>
             <div class="footer-links">
                 <a href="https://github.com/epaige8594">GitHub</a>
                 <a href="https://www.linkedin.com/in/emmitt-paige">LinkedIn</a>
