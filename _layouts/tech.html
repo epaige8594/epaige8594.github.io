@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ '/assets/css/tech-style.css' | relative_url }}">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        /* Dropdown Menu Styles */
+        /* Dropdown Menu Styles - Fixed */
         .dropdown {
             position: relative;
             display: inline-block;
@@ -16,25 +16,40 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            background: rgba(10, 25, 41, 0.95);
+            background: rgba(10, 25, 41, 0.98);
             backdrop-filter: blur(20px);
-            min-width: 200px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            min-width: 220px;
+            box-shadow: 0 12px 24px rgba(0,0,0,0.3);
             border-radius: 8px;
             border: 1px solid rgba(0, 229, 255, 0.3);
             z-index: 1001;
             top: 100%;
+            left: -20px; /* Slight left offset for visual balance */
+            margin-top: 0px; /* No gap between button and dropdown */
+            padding: 0.5rem 0;
+            transition: all 0.2s ease;
+        }
+        
+        /* Add invisible bridge to prevent gap issues */
+        .dropdown::after {
+            content: '';
+            position: absolute;
+            top: 100%;
             left: 0;
-            margin-top: 0.5rem;
+            width: 100%;
+            height: 10px;
+            background: transparent;
         }
         
         .dropdown-content a {
             color: var(--text-light);
-            padding: 12px 16px;
+            padding: 12px 20px;
             text-decoration: none;
             display: block;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             border-bottom: 1px solid rgba(0, 229, 255, 0.1);
+            transition: all 0.2s ease;
+            white-space: nowrap;
         }
         
         .dropdown-content a:last-child {
@@ -42,20 +57,64 @@
         }
         
         .dropdown-content a:hover {
-            background: rgba(0, 229, 255, 0.1);
+            background: rgba(0, 229, 255, 0.15);
             color: var(--primary);
+            padding-left: 25px;
         }
         
-        .dropdown:hover .dropdown-content {
+        /* Show dropdown on hover with no delay */
+        .dropdown:hover .dropdown-content,
+        .dropdown-content:hover {
             display: block;
         }
         
+        /* Keep dropdown visible when moving mouse from button to menu */
         .dropdown:hover .dropbtn {
             color: var(--primary);
         }
         
         .dropbtn {
             cursor: pointer;
+            padding: 0.5rem 0;
+            position: relative;
+        }
+        
+        /* Active state indicator */
+        .dropbtn::after {
+            content: '▼';
+            font-size: 0.7rem;
+            margin-left: 5px;
+            display: inline-block;
+            transition: transform 0.2s ease;
+        }
+        
+        .dropdown:hover .dropbtn::after {
+            transform: rotate(180deg);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .dropdown-content {
+                position: static;
+                display: none;
+                width: 100%;
+                box-shadow: none;
+                border: none;
+                background: rgba(10, 25, 41, 0.8);
+                margin-top: 0.5rem;
+            }
+            
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            
+            .dropdown-content a {
+                padding: 10px 15px;
+            }
+            
+            .dropbtn::after {
+                float: right;
+            }
         }
     </style>
 </head>
@@ -69,13 +128,13 @@
             <a href="/">Home</a>
             <a href="/about/">About</a>
             <div class="dropdown">
-                <span class="dropbtn">Portfolio ▼</span>
+                <span class="dropbtn">Portfolio</span>
                 <div class="dropdown-content">
                     <a href="/portfolio/">All Work</a>
-                    <a href="/portfolio/#policy">Policy & Governance</a>
-                    <a href="/portfolio/#cybersecurity">Cybersecurity</a>
-                    <a href="/portfolio/#api">API Documentation</a>
-                    <a href="/portfolio/#knowledge-base">Knowledge Base</a>
+                    <a href="/portfolio/#policy">📋 Policy & Governance</a>
+                    <a href="/portfolio/#cybersecurity">🛡️ Cybersecurity</a>
+                    <a href="/portfolio/#api">🔗 API Documentation</a>
+                    <a href="/portfolio/#knowledge-base">📚 Knowledge Base</a>
                 </div>
             </div>
             <a href="https://www.linkedin.com/in/emmitt-paige" target="_blank">LinkedIn</a>
@@ -99,5 +158,16 @@
             </div>
         </div>
     </footer>
+    
+    <!-- Optional: Add smooth scrolling for anchor links -->
+    <script>
+        document.querySelectorAll('a[href^="/portfolio/#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').split('#')[1];
+                window.location.href = '/portfolio/#' + targetId;
+            });
+        });
+    </script>
 </body>
 </html>
